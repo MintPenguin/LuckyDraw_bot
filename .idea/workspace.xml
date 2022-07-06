@@ -19,10 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4bb80316-5f98-40d2-b4cd-7403f8960d75" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="4bb80316-5f98-40d2-b4cd-7403f8960d75" name="Default Changelist" comment="adjust domain (add Config Vars for domain)">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +84,14 @@
       <option name="presentableId" value="Default" />
       <updated>1656909608774</updated>
     </task>
+    <task id="LOCAL-00001" summary="adjust domain (add Config Vars for domain)">
+      <created>1657065727239</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1657065727239</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -99,6 +105,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="adjust domain (add Config Vars for domain)" />
+    <option name="LAST_COMMIT_MESSAGE" value="adjust domain (add Config Vars for domain)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="201" y="222" width="1092" height="789" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1657039482012">
@@ -145,6 +155,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="135" y="224" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1657039449392" />
+    <state x="297" y="337" key="Vcs.Push.Dialog.v2" timestamp="1657065732645">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="297" y="337" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1657065732645" />
     <state x="115" y="204" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1656922771202">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
