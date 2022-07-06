@@ -8,6 +8,7 @@ import requests
 #import sys
 
 TOKEN = os.environ.get('LUCKY_DRAW_TOKEN')
+HEROKU = os.environ.get('HEROKU_DOMAIN')
 bot = discord.Client()
 bot = commands.Bot(command_prefix="##")
 
@@ -59,6 +60,8 @@ async def remain(ctx):
     embed = discord.Embed(title="remaining numbers", description=text, color=0x808080)
     await ctx.send(embed = embed)
 
+    print('remain')
+
 @bot.command()
 async def set(ctx, command1, command2):
     if ctx.guild:
@@ -92,7 +95,7 @@ def startTimer():
     global count
     timer = threading.Timer(600, startTimer)
     timer.start()
-    requests.get('https://lucky-draw-bot.herokuapp.com/')
+    requests.get(HEROKU)
     print('10minutes')
 
 
