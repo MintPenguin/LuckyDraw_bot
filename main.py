@@ -76,7 +76,7 @@ async def set(ctx, command1, command2):
             return
 
     if command1 == 'last':
-        if int(command1) >= 1024 or int(command1) <= 0:
+        if int(command2) >= 1024 or int(command2) <= 0:
             await ctx.send('Please enter the last number between 1 and 1024.')
         setLastNumber(command2)
         await ctx.send('set a new lucky draw.')

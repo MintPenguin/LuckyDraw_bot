@@ -19,8 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4bb80316-5f98-40d2-b4cd-7403f8960d75" name="Default Changelist" comment="add database for saving file 2nd">
-      <change beforePath="$PROJECT_DIR$/connectDB.py" beforeDir="false" afterPath="$PROJECT_DIR$/connectDB.py" afterDir="false" />
+    <list default="true" id="4bb80316-5f98-40d2-b4cd-7403f8960d75" name="Default Changelist" comment="add database for saving file 3rd">
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657200957983</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add database for saving file 3rd">
+      <created>1657201133148</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1657201133148</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -142,7 +149,8 @@
     <MESSAGE value="adjust domain (add Config Vars for domain) 2nd" />
     <MESSAGE value="add database for saving file" />
     <MESSAGE value="add database for saving file 2nd" />
-    <option name="LAST_COMMIT_MESSAGE" value="add database for saving file 2nd" />
+    <MESSAGE value="add database for saving file 3rd" />
+    <option name="LAST_COMMIT_MESSAGE" value="add database for saving file 3rd" />
   </component>
   <component name="WindowStateProjectService">
     <state x="201" y="222" width="1092" height="789" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1657039482012">
@@ -189,10 +197,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="135" y="224" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1657039449392" />
-    <state x="297" y="337" key="Vcs.Push.Dialog.v2" timestamp="1657065732645">
+    <state x="297" y="337" key="Vcs.Push.Dialog.v2" timestamp="1657201145262">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="297" y="337" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1657065732645" />
+    <state x="297" y="337" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1657201145262" />
     <state x="115" y="204" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1657178552669">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
