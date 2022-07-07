@@ -19,14 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4bb80316-5f98-40d2-b4cd-7403f8960d75" name="Default Changelist" comment="adjust domain (add Config Vars for domain) 2nd">
-      <change afterPath="$PROJECT_DIR$/connectDB.py" afterDir="false" />
+    <list default="true" id="4bb80316-5f98-40d2-b4cd-7403f8960d75" name="Default Changelist" comment="add database for saving file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileGenerator.py" beforeDir="false" afterPath="$PROJECT_DIR$/fileGenerator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/number.py" beforeDir="false" afterPath="$PROJECT_DIR$/number.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657065813021</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add database for saving file">
+      <created>1657200589174</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1657200589174</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -125,7 +126,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="adjust domain (add Config Vars for domain)" />
     <MESSAGE value="adjust domain (add Config Vars for domain) 2nd" />
-    <option name="LAST_COMMIT_MESSAGE" value="adjust domain (add Config Vars for domain) 2nd" />
+    <MESSAGE value="add database for saving file" />
+    <option name="LAST_COMMIT_MESSAGE" value="add database for saving file" />
   </component>
   <component name="WindowStateProjectService">
     <state x="201" y="222" width="1092" height="789" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1657039482012">
