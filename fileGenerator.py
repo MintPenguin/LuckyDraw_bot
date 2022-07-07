@@ -3,17 +3,25 @@
 # drawn_number.txt : 뽑은번호
 
 import os.path
+from connectDB import *
 
 def dirExist(name):
     if not os.path.isdir(name):
         os.makedirs(name)
+        print('make a directory: {0}'.format(name))
 
 def fileExist(name):
+    content = DBselect(name)
+
     if not os.path.isfile(name):
-        file = open(name, 'w')
-        file.close()
-        return False
-    return True
+        with open(name, 'w') as file:
+            print('clear a file: {0}'.format(name))
+        if None == content:
+            return
+
+    with open(name, 'w') as file:
+        file.writelines(content)
+        print('overwrite a file({0}): {1}'.format(name, content))
 
 def fileReader(name):
 
@@ -24,12 +32,21 @@ def fileReader(name):
         line = ''
         for line in lines:
             returnArray.append(line)
-        return returnArray
+
+    print('read a file({0}):'.format(name), returnArray)
+
+    return returnArray
 
 def fileWriter(name, content):
     with open(name, 'a') as file:
         file.writelines(content + '\n')
+        print('update a file({0}): +{1}'.format(name, content))
+
+    content = ''.join(fileReader(name))
+    DBupdate(name, content)
 
 def fileClear(name):
     with open(name, 'w') as file:
-        None
+        print('clear a file: {0}'.format(name))
+
+    DBupdate(name, '')

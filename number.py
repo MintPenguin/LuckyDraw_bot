@@ -11,30 +11,33 @@ def winningNumberGenerator(numbers):
 
 def numberRun():
 
-    global dataDirectory, lastNumberFile, winningNumber, lastNumber, winningNumberFile, nickNameFile, drawnNumberFile, limitTimes, limitTimesFile
+    global winningNumber, dataDirectory, lastNumberFile, lastNumber, winningNumberFile, nickNameFile, drawnNumberFile, limitTimes, limitTimesFile
 
     dirExist(dataDirectory)
 
     fileExist(nickNameFile)
     fileExist(drawnNumberFile)
+    fileExist(limitTimesFile)
+    fileExist(lastNumberFile)
+    fileExist(winningNumberFile)
 
-    if fileExist(limitTimesFile):
-        limitTimes = int(fileReader(limitTimesFile)[0])
-    else:
-        limitTimes = 3
+    x = fileReader(limitTimesFile)
+    if len(x) == 0:
         fileWriter(limitTimesFile, str(limitTimes))
-
-    if fileExist(lastNumberFile):
-        lastNumber = int(fileReader(lastNumberFile)[0])
     else:
-        lastNumber = 1
+        limitTimes = int(x[0])
+
+    x = fileReader(lastNumberFile)
+    if len(x) == 0:
         fileWriter(lastNumberFile, str(lastNumber))
-
-    if fileExist(winningNumberFile):
-        winningNumber = fileReader(winningNumberFile)
-        winningNumber = list(map(int, winningNumber))
     else:
+        lastNumber = int(x[0])
+
+    x = fileReader(winningNumberFile)
+    if len(x) == 0:
         setWinningNumber()
+    else:
+        winningNumber = list(map(int, x))
 
 def setLastNumber(command):
     global lastNumber, drawnNumberFile, nickNameFile, lastNumberFile
