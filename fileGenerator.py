@@ -5,23 +5,26 @@
 import os.path
 from connectDB import *
 
+def createDatabaseTable():
+    DBcreateTable()
+
 def dirExist(name):
     if not os.path.isdir(name):
         os.makedirs(name)
         print('make a directory: {0}'.format(name))
 
 def fileExist(name):
-    content = DBselect(name)
-
     if not os.path.isfile(name):
         with open(name, 'w') as file:
             print('clear a file: {0}'.format(name))
-        if None == content:
-            return
+
+    content = DBselect(name)
+    if content is None:
+        return
 
     with open(name, 'w') as file:
         file.writelines(content)
-        print('overwrite a file({0}): {1}'.format(name, content))
+        print('overwrite a file({0}):'.format(name), content)
 
 def fileReader(name):
 
@@ -38,9 +41,10 @@ def fileReader(name):
     return returnArray
 
 def fileWriter(name, content):
+    content += '\n'
     with open(name, 'a') as file:
-        file.writelines(content + '\n')
-        print('update a file({0}): +{1}'.format(name, content))
+        file.writelines(content)
+        print('update a file({0}): (+)'.format(name), content)
 
     content = ''.join(fileReader(name))
     DBupdate(name, content)

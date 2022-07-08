@@ -11,6 +11,8 @@ def winningNumberGenerator(numbers):
 
 def numberRun():
 
+    createDatabaseTable()
+
     global winningNumber, dataDirectory, lastNumberFile, lastNumber, winningNumberFile, nickNameFile, drawnNumberFile, limitTimes, limitTimesFile
 
     dirExist(dataDirectory)
@@ -60,7 +62,6 @@ def setlimitTimes(count):
     limitTimes = int(count)
     fileClear(limitTimesFile)
     fileWriter(limitTimesFile, count)
-
 
 def isWinning(number, discordID):
     global limitTimes

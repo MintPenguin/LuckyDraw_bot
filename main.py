@@ -7,7 +7,7 @@ import threading, requests
 #import sys
 
 TOKEN = os.environ.get('LUCKY_DRAW_TOKEN')
-HEROKU = os.environ.get('HEROKU_DOMAIN')
+HEROKU = os.environ.get('HEROKU_DOMAIN') # for free tier at heroku
 bot = discord.Client()
 bot = commands.Bot(command_prefix="##")
 
@@ -76,7 +76,7 @@ async def set(ctx, command1, command2):
             return
 
     if command1 == 'last':
-        if int(command2) >= 1024 or int(command2) <= 0:
+        if int(command2) > 1024 or int(command2) < 1:
             await ctx.send('Please enter the last number between 1 and 1024.')
         setLastNumber(command2)
         await ctx.send('set a new lucky draw.')
@@ -100,6 +100,9 @@ async def clear(ctx, command1):
     pritn(ctx.author.id, ': clear', command1, '\n')
 
 def startTimer():
+    if HEROKU is None:
+        return
+
     global count
     timer = threading.Timer(600, startTimer)
     timer.start()
