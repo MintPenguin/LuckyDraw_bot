@@ -25,10 +25,9 @@ async def on_command_error(ctx, error):
 #    	await ctx.send("command not found")
         print(error)
 
-
-print('{0}({1}): draw number {2}'.format(ctx.author, ctx.author.id, number))
 @bot.command()
 async def draw(ctx, number):
+    print('{0}({1}): draw number {2}'.format(ctx.author, ctx.author.id, number))
 
     winningCode = isWinning(number, ctx.author.id)
     if winningCode == 1: ##당첨번호
