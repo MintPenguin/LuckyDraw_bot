@@ -16,15 +16,17 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4bb80316-5f98-40d2-b4cd-7403f8960d75" name="Default Changelist" comment="add database for saving file 4th">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="4bb80316-5f98-40d2-b4cd-7403f8960d75" name="Default Changelist" comment="for don't have database">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/connectDB.py" beforeDir="false" afterPath="$PROJECT_DIR$/connectDB.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileGenerator.py" beforeDir="false" afterPath="$PROJECT_DIR$/fileGenerator.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/number.py" beforeDir="false" afterPath="$PROJECT_DIR$/number.py" afterDir="false" />
     </list>
@@ -142,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657201453704</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="for don't have database">
+      <created>1657264966791</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1657264966791</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -164,7 +173,8 @@
     <MESSAGE value="add database for saving file 2nd" />
     <MESSAGE value="add database for saving file 3rd" />
     <MESSAGE value="add database for saving file 4th" />
-    <option name="LAST_COMMIT_MESSAGE" value="add database for saving file 4th" />
+    <MESSAGE value="for don't have database" />
+    <option name="LAST_COMMIT_MESSAGE" value="for don't have database" />
   </component>
   <component name="WindowStateProjectService">
     <state x="201" y="222" width="1092" height="789" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1657039482012">
@@ -175,38 +185,38 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="288" y="326" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1656914053447" />
-    <state width="1399" height="211" key="GridCell.Tab.0.bottom" timestamp="1657262340883">
+    <state width="1241" height="216" key="GridCell.Tab.0.bottom" timestamp="1657274504730">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1399" height="211" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1657262340883" />
-    <state width="1399" height="211" key="GridCell.Tab.0.center" timestamp="1657262340883">
+    <state width="1241" height="216" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1657274504730" />
+    <state width="1241" height="216" key="GridCell.Tab.0.center" timestamp="1657274504730">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1399" height="211" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1657262340883" />
-    <state width="1399" height="211" key="GridCell.Tab.0.left" timestamp="1657262340883">
+    <state width="1241" height="216" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1657274504730" />
+    <state width="1241" height="216" key="GridCell.Tab.0.left" timestamp="1657274504730">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1399" height="211" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1657262340883" />
-    <state width="1399" height="211" key="GridCell.Tab.0.right" timestamp="1657262340883">
+    <state width="1241" height="216" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1657274504730" />
+    <state width="1241" height="216" key="GridCell.Tab.0.right" timestamp="1657274504730">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1399" height="211" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1657262340883" />
-    <state width="1399" height="281" key="GridCell.Tab.1.bottom" timestamp="1657259202301">
+    <state width="1241" height="216" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1657274504730" />
+    <state width="1399" height="281" key="GridCell.Tab.1.bottom" timestamp="1657265999556">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1399" height="281" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1657259202301" />
-    <state width="1399" height="281" key="GridCell.Tab.1.center" timestamp="1657259202301">
+    <state width="1399" height="281" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1657265999556" />
+    <state width="1399" height="281" key="GridCell.Tab.1.center" timestamp="1657265999555">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1399" height="281" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1657259202301" />
-    <state width="1399" height="281" key="GridCell.Tab.1.left" timestamp="1657259202301">
+    <state width="1399" height="281" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1657265999555" />
+    <state width="1399" height="281" key="GridCell.Tab.1.left" timestamp="1657265999555">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1399" height="281" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1657259202301" />
-    <state width="1399" height="281" key="GridCell.Tab.1.right" timestamp="1657259202301">
+    <state width="1399" height="281" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1657265999555" />
+    <state width="1399" height="281" key="GridCell.Tab.1.right" timestamp="1657265999556">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1399" height="281" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1657259202301" />
+    <state width="1399" height="281" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1657265999556" />
     <state x="135" y="224" key="SettingsEditor" timestamp="1657039449392">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

@@ -79,7 +79,7 @@ def isWinning(number, discordID):
     for nl in nickNameList:
         if int(nl) == discordID:
             times += 1
-    if limitTimes <= times and limitTimes >= 0:
+    if limitTimes <= times and limitTimes >= 0: # 뽑기 횟수 제한이 0 이상이고 뽑은 횟수보다 많을 때
         return 3
 
     fileWriter(nickNameFile, str(discordID))

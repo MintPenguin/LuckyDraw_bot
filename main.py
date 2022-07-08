@@ -26,24 +26,24 @@ async def on_command_error(ctx, error):
         print(error)
 
 
+print('{0}({1}): draw number {2}'.format(ctx.author, ctx.author.id, number))
 @bot.command()
 async def draw(ctx, number):
-    print('{0} picked up the number.'.format(ctx.message.author.mention))
 
     winningCode = isWinning(number, ctx.author.id)
     if winningCode == 1: ##당첨번호
-        await ctx.send('{0} picked up the number.'.format(ctx.message.author.mention))
+        # await ctx.reply('{0} picked up the number.'.format(ctx.message.author.mention))
         embed = discord.Embed(title=number, description="winning", color=0x00FF00)
-        embed.set_footer(text = '{0}'.format(ctx.message.author.name))
-        await ctx.send(embed = embed)
+        embed.set_footer(text = '{0}'.format(ctx.message.author))
+        await ctx.reply(embed = embed)
     elif winningCode == 0: ##꽝번호
-        await ctx.send('{0} picked up the number.'.format(ctx.message.author.mention))
+        # await ctx.send('{0} picked up the number.'.format(ctx.message.author.mention))
         embed = discord.Embed(title=number, description="losing", color=0xFF0000)
-        embed.set_footer(text='{0}'.format(ctx.message.author.name))
-        await ctx.send(embed = embed)
+        embed.set_footer(text='{0}'.format(ctx.message.author))
+        await ctx.reply(embed = embed)
     elif winningCode == 2: #뽑은번호
         await ctx.send(number + ' has already been picked up.')
-    elif winningCode == 3: #뽑음
+    elif winningCode == 3: #이미뽑음
         await ctx.send('You have already drawn a number.')
     elif winningCode == -1: ##번호없음
         await ctx.send('There is no number.')
@@ -52,8 +52,7 @@ async def draw(ctx, number):
 
 @bot.command()
 async def remain(ctx):
-
-    print(ctx.author.id, ': remain')
+    print('{0}({1}): remain'.format(ctx.author, ctx.author.id))
 
     text = ''
     numberList = remainingNumber()
@@ -68,16 +67,19 @@ async def remain(ctx):
 
 @bot.command()
 async def set(ctx, command1, command2):
-    print(ctx.author.id, ': set', command1, command2)
+    print('{0}({1}): set {2} {3}'.format(ctx.author, ctx.author.id, command1, command2))
 
     if ctx.guild:
         if not ctx.message.author.guild_permissions.administrator:
-            await ctx.send('You are not a management in this discord server.')
+            await ctx.reply('You are not a management in this discord server.')
+            print('')
             return
 
     if command1 == 'last':
         if int(command2) > 1024 or int(command2) < 1:
-            await ctx.send('Please enter the last number between 1 and 1024.')
+            await ctx.reply('Please enter the last number between 1 and 1024.')
+            print('')
+            return
         setLastNumber(command2)
         await ctx.send('set a new lucky draw.')
     if command1 == 'count':
@@ -90,14 +92,15 @@ async def set(ctx, command1, command2):
 async def clear(ctx, command1):
     if ctx.guild:
         if not ctx.message.author.guild_permissions.administrator:
-            await ctx.send('You are not a management in this discord server.')
+            await ctx.reply('You are not a management in this discord server.')
+            print('')
             return
 
     if command1 == 'count':
         fileClear(nickNameFile)
         await ctx.send('Reset count.')
 
-    pritn(ctx.author.id, ': clear', command1, '\n')
+    print(ctx.author.id, ': clear', command1, '\n')
 
 def startTimer():
     if HEROKU is None:
