@@ -28,14 +28,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4bb80316-5f98-40d2-b4cd-7403f8960d75" name="Default Changelist" comment="adjust typo and log">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="4bb80316-5f98-40d2-b4cd-7403f8960d75" name="Default Changelist" comment="edit command">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/connectDB.py" beforeDir="false" afterPath="$PROJECT_DIR$/connectDB.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileGenerator.py" beforeDir="false" afterPath="$PROJECT_DIR$/fileGenerator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/number.py" beforeDir="false" afterPath="$PROJECT_DIR$/number.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657277154025</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="edit command">
+      <created>1669969983857</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1669969983857</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -196,7 +198,8 @@
     <MESSAGE value="add database for saving file 4th" />
     <MESSAGE value="for don't have database" />
     <MESSAGE value="adjust typo and log" />
-    <option name="LAST_COMMIT_MESSAGE" value="adjust typo and log" />
+    <MESSAGE value="edit command" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit command" />
   </component>
   <component name="WindowStateProjectService">
     <state width="1519" height="250" key="GridCell.Tab.0.bottom" timestamp="1669968569400">

@@ -7,16 +7,16 @@ import os
 # file_name: 파일 이름
 # file_cont: 파일 내용
 
-# DB_HOST = os.environ.get('DB_HOST')
-# DB_NAME = os.environ.get('DB_NAME')
-# DB_USER = os.environ.get('DB_USER')
-# DB_PASS = os.environ.get("DB_PASS")
-# DB_PORT = os.environ.get("DB_PORT")
-DB_HOST = None #'localhost'
-DB_NAME = 'test_bot_db'
-DB_USER = 'postgres'
-DB_PASS = 'qpcj23Kd0'
-DB_PORT = '5432'
+DB_HOST = os.environ.get('DB_HOST')
+DB_NAME = os.environ.get('DB_NAME')
+DB_USER = os.environ.get('DB_USER')
+DB_PASS = os.environ.get("DB_PASS")
+DB_PORT = os.environ.get("DB_PORT")
+# DB_HOST = 'localhost'
+# DB_NAME = 'test_bot_db'
+# DB_USER = 'postgres'
+# DB_PASS = 'qpcj23Kd0'
+# DB_PORT = '5432'
 
 DB_TABLE = 'lucky_draw_file_table'  # table name in database
 DB_FILE_NAME_COL = 'FILE_NAME'
