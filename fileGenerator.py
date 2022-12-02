@@ -5,52 +5,65 @@
 import os.path
 from connectDB import *
 
-def createDatabaseTable():
-    DBcreateTable()
 
-def dirExist(name):
-    if not os.path.isdir(name):
-        os.makedirs(name)
-        print('make a directory: {0}'.format(name))
+class FileProc(Database):
 
-def fileExist(name):
-    if not os.path.isfile(name):
+    def __init__(self):
+        pass
+
+    def dirExist(self, name):
+        if not os.path.isdir(name):
+            os.makedirs(name)
+            print('make a directory: {0}'.format(name))
+
+    def fileExist(self, name):
+        if not os.path.isfile(name):
+            with open(name, 'w') as file:
+                print('clear a file: {0}'.format(name))
+
+        content = self.DBselect(name)
+        if content is None:
+            return
+
         with open(name, 'w') as file:
-            print('clear a file: {0}'.format(name))
+            file.writelines(content)
+            print('overwrite a file({0}):'.format(name), content)
 
-    content = DBselect(name)
-    if content is None:
-        return
+    def fileReader(self, name):
+        returnArray = []
 
-    with open(name, 'w') as file:
-        file.writelines(content)
-        print('overwrite a file({0}):'.format(name), content)
+        try:
+            with open(name, 'r') as file:
+                lines = file.readlines()
+                line = ''
+                for line in lines:
+                    returnArray.append(line)
+            print('read a file({0}):'.format(name), returnArray)
+        except Exception as e:
+            print(e)
 
-def fileReader(name):
+        return returnArray
 
-    returnArray = []
+    def fileWriter(self, name, content):
 
-    with open(name, 'r') as file:
-        lines = file.readlines()
-        line = ''
-        for line in lines:
-            returnArray.append(line)
+        content = content.strip()
+        content += '\n'
 
-    print('read a file({0}):'.format(name), returnArray)
+        try:
+            with open(name, 'a') as file:
+                file.writelines(content)
+                print('update a file({0}): (+)'.format(name), content)
+        except Exception as e:
+            print(e)
 
-    return returnArray
+        content = ''.join(self.fileReader(name))
+        self.DBupdate(name, content)
 
-def fileWriter(name, content):
-    content += '\n'
-    with open(name, 'a') as file:
-        file.writelines(content)
-        print('update a file({0}): (+)'.format(name), content)
+    def fileClear(self, name):
+        try:
+            with open(name, 'w') as file:
+                print('clear a file: {0}'.format(name))
 
-    content = ''.join(fileReader(name))
-    DBupdate(name, content)
-
-def fileClear(name):
-    with open(name, 'w') as file:
-        print('clear a file: {0}'.format(name))
-
-    DBupdate(name, '')
+            self.DBupdate(name, '')
+        except Exception as e:
+            print(e)

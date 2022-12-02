@@ -2,13 +2,20 @@
 
 ## command
 for users
-> `##draw [number]` : pick up the number.   
-> `##remain` : view remaning numbers.
+> `##draw <number>` : draw the number.   
+> `##view board` : view remaining numbers.   
 
 for manager   
-> `##set last [number]` : set the board. (last number: `[number]`, enter one of number 1 to 1024)   
-> `##set count [number]` : limit the number of uses. (\~-1: no limit, 0\~: set limit)   
-> `##clear count` : reset limit of uses.   
+> Board   
+> `##reset baord <the number of draws>` : Set the board with the number of draws. ( `<the number of draws>`, one of 1 to 1024)   
+>    
+>  Limit count of draws   
+> `##set count <number>` : Set limit the number of draws to `<number>` times. (\~-1: no limit, 0\~: set limit)      
+> `##clear count` : Clear draw limit for all users.   
+>    
+> Change the number of winnings   
+> `##add winning <amount> <rank>` : Add `<amount>` winning numbers of the `<rank>`.   
+> `##delete winning <amount> <rank>` : delete `<amount>` winning numbers of the `<rank>`.   
    
    
    

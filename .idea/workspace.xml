@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -26,8 +29,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4bb80316-5f98-40d2-b4cd-7403f8960d75" name="Default Changelist" comment="adjust typo and log">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connectDB.py" beforeDir="false" afterPath="$PROJECT_DIR$/connectDB.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileGenerator.py" beforeDir="false" afterPath="$PROJECT_DIR$/fileGenerator.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/number.py" beforeDir="false" afterPath="$PROJECT_DIR$/number.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657276206805</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="adjust typo and log">
+      <created>1657277154025</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1657277154025</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -184,69 +199,21 @@
     <option name="LAST_COMMIT_MESSAGE" value="adjust typo and log" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="201" y="222" width="1092" height="789" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1657039482012">
+    <state width="1519" height="250" key="GridCell.Tab.0.bottom" timestamp="1669968569400">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="201" y="222" width="1092" height="789" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1657039482012" />
-    <state x="288" y="326" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1656914053447">
+    <state width="1519" height="250" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1669968569400" />
+    <state width="1519" height="250" key="GridCell.Tab.0.center" timestamp="1669968569400">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="288" y="326" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1656914053447" />
-    <state width="1241" height="216" key="GridCell.Tab.0.bottom" timestamp="1657274504730">
+    <state width="1519" height="250" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1669968569400" />
+    <state width="1519" height="250" key="GridCell.Tab.0.left" timestamp="1669968569400">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1241" height="216" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1657274504730" />
-    <state width="1241" height="216" key="GridCell.Tab.0.center" timestamp="1657274504730">
+    <state width="1519" height="250" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1669968569400" />
+    <state width="1519" height="250" key="GridCell.Tab.0.right" timestamp="1669968569400">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1241" height="216" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1657274504730" />
-    <state width="1241" height="216" key="GridCell.Tab.0.left" timestamp="1657274504730">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1241" height="216" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1657274504730" />
-    <state width="1241" height="216" key="GridCell.Tab.0.right" timestamp="1657274504730">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1241" height="216" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1657274504730" />
-    <state width="1399" height="281" key="GridCell.Tab.1.bottom" timestamp="1657265999556">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1399" height="281" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1657265999556" />
-    <state width="1399" height="281" key="GridCell.Tab.1.center" timestamp="1657265999555">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1399" height="281" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1657265999555" />
-    <state width="1399" height="281" key="GridCell.Tab.1.left" timestamp="1657265999555">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1399" height="281" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1657265999555" />
-    <state width="1399" height="281" key="GridCell.Tab.1.right" timestamp="1657265999556">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1399" height="281" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1657265999556" />
-    <state x="135" y="224" key="SettingsEditor" timestamp="1657039449392">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="135" y="224" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1657039449392" />
-    <state x="934" y="388" key="VCS.EditChangelistDialog" timestamp="1657262077897">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="934" y="388" key="VCS.EditChangelistDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1657262077897" />
-    <state x="297" y="337" key="Vcs.Push.Dialog.v2" timestamp="1657201145262">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="297" y="337" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1657201145262" />
-    <state x="115" y="204" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1657178552669">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="115" y="204" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1657178552669" />
-    <state x="605" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1657200271646">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="605" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050@0.0.1920.1050" timestamp="1657200271646" />
-    <state x="214" y="283" width="672" height="678" key="search.everywhere.popup" timestamp="1657183162596">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="214" y="283" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1657183162596" />
+    <state width="1519" height="250" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1669968569400" />
   </component>
 </project>
