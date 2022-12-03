@@ -24,14 +24,16 @@ import threading, requests
 
 TOKEN = os.environ.get('LUCKY_DRAW_TOKEN')
 REPLE = os.environ.get('REPLE')
-bot = discord.Client()
+
+intents = discord.Intents.all()
+
 command_prefix = '##'
-bot = commands.Bot(command_prefix=command_prefix)
+bot = commands.Bot(command_prefix=command_prefix,intents=intents)
 
 @bot.event
 async def on_ready():
     #print(sys.executable)
-    startTimer()
+    #startTimer()
     c = Check()
     c.numberRun()
     print('We have logged in as {0.user}\n=========='.format(bot))
