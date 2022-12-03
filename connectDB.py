@@ -1,7 +1,6 @@
 import psycopg2
 import os
 
-
 # for saving file
 
 # file_name: 파일 이름
@@ -47,6 +46,23 @@ class Database():
             print(e)
 
     def DBselect(self, file_name):
+
+        def DBupdate(file_name, file_cont):
+            global DB_HOST, DB_NAME, DB_USER, DB_PASS, DB_PORT
+            global DB_TABLE, DB_FILE_NAME_COL, DB_FILE_CONT_COL
+            if DB_HOST is None:
+                return
+
+            sql = 'insert into {0} values (\'{1}\', \'{2}\') '.format(DB_TABLE, file_name, file_cont)
+            sql += 'on conflict on constraint pk '
+            sql += 'do update set {0} = \'{1}\';'.format(DB_FILE_CONT_COL, file_cont)
+
+            with psycopg2.connect(host=DB_HOST, dbname=DB_NAME, user=DB_USER, password=DB_PASS, port=DB_PORT) as conn:
+                with conn.cursor() as cur:
+                    cur.execute(sql)
+
+            print('DBupdate:', sql)
+
         global DB_HOST, DB_NAME, DB_USER, DB_PASS, DB_PORT
         global DB_TABLE, DB_FILE_NAME_COL, DB_FILE_CONT_COL
         if DB_HOST is None:
@@ -63,6 +79,7 @@ class Database():
                 print('DBselect({0}):'.format(sql), ret)
                 if ret is None:
                     ret = ''
+
                     DBupdate(file_name, ret)
                 else:
                     ret = ret[0]
